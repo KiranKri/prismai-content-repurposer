@@ -2,7 +2,7 @@
 
 PrismAI turns one piece of content into platform-ready posts and delivers them as an editable web report and a print-ready PDF.
 
-Small business owners, solo creators and early-stage founders buy it on Gumroad and Fiverr, typically for $10 to $50. They paste an article, transcript, notes or a URL, add their brand name, audience and voice, and get back posts for LinkedIn, Instagram, YouTube Shorts, an email newsletter and other platforms. Both results arrive as two public links, with no account needed.
+It is built for small business owners, solo creators and early-stage founders. They paste an article, transcript, notes or a URL, add their brand name, audience and voice, and get back posts for LinkedIn, Instagram, YouTube Shorts, an email newsletter and other platforms. Both results arrive as two public links, with no account needed.
 
 ## Live demo
 
@@ -42,7 +42,7 @@ flowchart LR
 
 More detail: [docs/architecture.md](docs/architecture.md).
 
-## What I built
+## What the project covers
 
 - **Workflow design:** the full MindStudio pipeline, including license checks, URL or text input, parallel generation, optional image generation with failure logging, and saved brand voice.
 - **Prompt design (described, not shown):** separate prompts for analysis, the three format groups, image direction and final formatting, each returning structured JSON so code can check and render it.
@@ -54,6 +54,10 @@ More detail: [docs/architecture.md](docs/architecture.md).
   - "Download original PDF" and "Print edited version".
 - **Print and PDF layout:** US Letter, a cover page with the contents in posting order, and page breaks controlled with CSS only.
 - **Testing:** unit tests for the extracted logic, tests that run each sample report's own script, and a PDF layout checker. See [Testing](#testing).
+
+## How it was built
+
+I set the requirements and the rules, and reviewed the code and every review round. AI assistants wrote the code and these docs under my direction, and also acted as reviewers in the design rounds (see [docs/design-iterations.md](docs/design-iterations.md)).
 
 ## Design iteration, by the numbers
 
@@ -92,7 +96,7 @@ The older samples are kept on purpose: the tests confirm the checks catch the bu
 
 ## About this repo
 
-PrismAI is a live commercial product. The prompts, the full workflow and the full report builder are private. This repo holds the rendered sample reports, two small utilities extracted from the builder, the tests and the documentation. It is shared for review only (see [License](#license)).
+PrismAI is built as a paid, self-serve product, so the prompts, the full workflow and the full report builder are private. This repo holds the rendered sample reports, two small utilities extracted from the builder, the tests and the documentation. It is shared for review only (see [License](#license)).
 
 ## License
 

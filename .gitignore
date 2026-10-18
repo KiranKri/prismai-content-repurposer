@@ -1,7 +1,6 @@
-# Raw MindStudio exports live outside the repo and must never be committed
+# Raw MindStudio exports and working notes stay out of the public repo
 _inbox/
-# The task brief
-PRISMAI_REPO_PROMPT.md
+*_PROMPT.md
 # Local secrets
 .env
 .env.*

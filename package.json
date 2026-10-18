@@ -7,7 +7,7 @@
     "check:pdf": "node tests/pdf-checks/check-pdf.js samples"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22.13"
   },
   "devDependencies": {
     "happy-dom": "20.14.5",

@@ -26,7 +26,7 @@
       "template": "v6",
       "round": "Round 4",
       "current": false,
-      "note": "Test brand. Round 4 build, before the timeline and Instagram fixes.",
+      "note": "Fictional test brand. Round 4 build, before the timeline and Instagram fixes.",
       "knownIssues": {
         "pdf": ["warn page 5 fragment-top", "warn page 6 blank-space"],
         "copyAll": [],
@@ -42,7 +42,7 @@
       "template": "v5",
       "round": "Round 3",
       "current": false,
-      "note": "Test brand. Round 3 build.",
+      "note": "Fictional test brand. Round 3 build.",
       "knownIssues": {
         "pdf": ["warn page 4 stranded-heading", "fail page 7 blank-space"],
         "copyAll": ["linkedin includes carousel_slides", "youtube_shorts includes script"],
@@ -58,7 +58,7 @@
       "template": "v4",
       "round": "Round 2",
       "current": false,
-      "note": "Test brand. Round 2 build, the first redesign.",
+      "note": "Fictional test brand. Round 2 build, the first redesign.",
       "knownIssues": {
         "pdf": ["warn page 4 fragment-top"],
         "copyAll": ["instagram includes reel_hook", "youtube_shorts includes b_roll_shot_ideas", "youtube_shorts includes on_screen_text", "youtube_shorts includes script"],
@@ -74,7 +74,7 @@
       "template": "v3",
       "round": "Round 1",
       "current": false,
-      "note": "Test brand. Round 1 build (sample B), the original layout.",
+      "note": "Fictional test brand. Round 1 build (sample B), the original layout.",
       "knownIssues": {
         "pdf": ["fail document body-font", "fail page 1 min-font", "fail page 2 min-font", "warn page 2 blank-space", "fail page 3 min-font"],
         "copyAll": ["email_newsletter labels on clipboard", "youtube_shorts includes b_roll_shot_ideas", "youtube_shorts includes on_screen_text", "youtube_shorts includes script", "youtube_shorts labels on clipboard"],

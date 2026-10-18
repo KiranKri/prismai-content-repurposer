@@ -1,6 +1,6 @@
 # Testing
 
-What is tested, how, and why. Everything runs with Node 20 or later.
+What is tested, how, and why. Everything runs with Node 22.13 or later (pdf.js 6 needs it). CI uses Node 24.
 
 ```
 npm ci
@@ -40,7 +40,7 @@ The tests cover exactly those. The prompts are not tested here because they are 
 
 The parser always writes the range with an en dash, whatever dash the model used, so `0-3` becomes `0–3s`. The tests also cover timings that use an em dash as the separator, or put the time in brackets after the phase.
 
-The `during CTA` case was a bug found while writing these tests: a timing with no time in it skipped the phase clean-up, so it stayed lower case. It is fixed in the builder source and goes live with the next MindStudio update. TODO(KK): confirm once deployed.
+The `during CTA` case was a bug found while writing these tests: a timing with no time in it skipped the phase clean-up, so it stayed lower case. It is fixed in the builder source and goes live with the next MindStudio update. Open: confirm it on that build.
 
 **Regression test.** One build shipped the phase as `Appears at , during hook`. For 24 timing strings, the test fails if a phase:
 - starts with punctuation;
@@ -125,7 +125,6 @@ Limits:
 `npm run check:pdf` on 18 October 2026:
 
 ```
-
 samples/brew-and-co/report.pdf: 5 pages, body text 10.5pt, 0 fail, 1 warn
   page 1: ok   612x792pt, min text 7.9pt, blank 8.1%
   page 2: ok   612x792pt, min text 7.9pt, blank 11%
@@ -180,7 +179,7 @@ samples/spoke-and-wheel/report.pdf: 7 pages, body text 10.5pt, 1 fail, 1 warn
 
 Exit code 1, because of the failures in the round 1 sample, the round 3 sample and the latest build. All of them are listed in `samples.json`, so `npm test` passes and any change in the findings fails it.
 
-The latest build's page 4 failure (72.5% blank) is a real, open regression. TODO(KK): fix in the builder and replace the sample with a new build.
+The latest build's page 4 failure (72.5% blank) is a real, open regression. Open: fix it in the builder and replace the sample with a new build.
 
 ## 5. Not tested here
 

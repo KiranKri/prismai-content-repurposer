@@ -117,7 +117,7 @@ I re-measured the round 4 results on this build:
 
 **Found, the Instagram orphan is not fully gone:** page 6 opens with the last two lines of the Instagram caption and its hashtags, then the YouTube Shorts heading. That is one line more than the checker's fragment threshold (fewer than 3 lines), so it is not flagged.
 
-TODO(KK): decide how to fix the page 4 gap, for example by letting the frame break when it would leave more than half a page empty, and confirm on a new MindStudio build.
+Open: decide how to fix the page 4 gap, for example by letting the frame break when it would leave more than half a page empty, and confirm on a new MindStudio build.
 
 ## Summary
 
