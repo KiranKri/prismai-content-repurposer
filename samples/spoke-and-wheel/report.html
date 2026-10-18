@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Spoke &amp; Wheel · 4-Platform Content Pack: Bike Maintenance Workshop</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"><style>*{box-sizing:border-box}html,body{margin:0;padding:0}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:Inter,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1f1f1f;font-size:1rem;line-height:1.55;background:#f7f5f0;-webkit-print-color-adjust:exact;print-color-adjust:exact;font-feature-settings:'cv11','ss01'}
+.wrap{max-width:46rem;margin:0 auto;padding:1.25rem 1.25rem 2rem}
+a{color:#0e6b5c}
+.wordmark{font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:#141414;line-height:1.3}
+.hero{padding:.25rem 0 1rem;border-bottom:1px solid #e4e0d6;margin-bottom:1rem}
+.hero-rule{margin-top:.6rem;padding-top:.75rem;border-top:3px solid #0e6b5c}
+.kicker{font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#0e6b5c;margin:0 0 .3rem;line-height:1.4}
+h1{font-size:clamp(1.9rem,3.2vw,2.4rem);line-height:1.15;letter-spacing:-.015em;margin:0 0 .4rem;font-weight:700;color:#141414;text-wrap:balance}
+.sub{font-size:1.02rem;line-height:1.5;color:#55524b;margin:0 0 .5rem;text-wrap:pretty}
+.meta-row{display:flex;flex-wrap:wrap;gap:.25rem 1rem;margin:.25rem 0 0;font-size:.875rem;line-height:1.5;color:#3d3b36}
+.mk{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8a857a;margin-right:.3rem;white-space:nowrap}
+@media (min-width:760px){.hero.has-img{display:grid;grid-template-columns:1fr 11rem;gap:1.5rem;align-items:end}}
+.hero-img{margin:.75rem 0 0;position:relative}.hero-img img{display:block;max-width:100%;max-height:11rem;width:auto;height:auto;border-radius:10px;background:#e9e5dc}
+.img-dl{position:absolute;right:.5rem;bottom:.5rem;font:inherit;font-size:.75rem;font-weight:600;border:0;border-radius:999px;background:rgba(255,255,255,.94);color:#1f1f1f;padding:.3rem .65rem;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.15)}
+.hero-img .img-dl{position:static;margin-top:.4rem;box-shadow:none;border:1px solid #d6d1c4;background:#fff}
+.sec{font-size:1.2rem;font-weight:700;margin:0;color:#141414;line-height:1.3}
+.content-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem 1rem;margin:0 0 .6rem;break-after:avoid;page-break-after:avoid}
+.hint{font-size:.875rem;color:#6e6a61;margin:0}
+.plan{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 .9rem;padding:0}
+.plan li{display:flex;align-items:center}.plan li+li::before{content:'→';color:#a59f92;margin-right:.5rem}
+.plan a{display:inline-flex;align-items:center;gap:.45rem;text-decoration:none;color:#1f1f1f;font-weight:600;font-size:.9rem;background:#fff;border:1px solid #e4e0d6;border-radius:999px;padding:.2rem .8rem .2rem .25rem}
+.step{display:inline-flex;align-items:center;justify-content:center;width:1.5rem;height:1.5rem;border-radius:50%;border:1.5px solid #0e6b5c;background:#fff;color:#0e6b5c;font-size:.75rem;font-weight:700;flex:none;line-height:1}
+.step.ghost{border-color:#cfc9bc;color:#77736a}
+.card{background:#fff;border:1px solid #e4e0d6;border-top:3px solid var(--pc,#0e6b5c);border-radius:12px;padding:1.15rem 1.5rem 1.5rem;margin:0 0 1.25rem;break-inside:auto;page-break-inside:auto}
+.card-head{display:flex;align-items:center;gap:.6rem;margin:0 0 1rem;break-after:avoid;page-break-after:avoid;break-inside:avoid}
+.pdot{width:.65rem;height:.65rem;border-radius:50%;flex:none}
+.card-head h2{margin:0;font-size:1.3rem;line-height:1.3;font-weight:700}
+.badge{font-size:.72rem;font-weight:700;letter-spacing:.04em;color:#55524b;border:1px solid #d6d1c4;border-radius:999px;padding:.12rem .55rem;line-height:1.3;white-space:nowrap}
+.card-head .copy-btn{margin-left:auto}
+.field{margin:0 0 1.1rem}.field:last-child{margin-bottom:0}.chips,.tbl{break-inside:avoid;page-break-inside:avoid}
+.card>.field:last-child,.frame>.field:last-child,.f-tags{break-before:avoid;page-break-before:avoid}
+.f-tags,.card>.field:last-child{break-inside:avoid;page-break-inside:avoid}.tl-row:last-child,.item:last-child{break-before:avoid;page-break-before:avoid}
+.f-head{display:flex;align-items:center;gap:.5rem;min-height:1.6rem;margin:0 0 .3rem;break-after:avoid;page-break-after:avoid}
+.label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#77736a;line-height:1.4;margin:0}
+.f-head .copy-btn{margin-left:auto}
+.val{max-width:40rem;font-size:1rem;line-height:1.6;color:#1f1f1f;border-radius:4px;orphans:3;widows:3}
+.val p{margin:0}.val .gap{height:.7em}.val ul,.val ol{margin:.25rem 0 .25rem 1.2rem;padding:0}.val .md-h{font-weight:700;margin-top:.3rem}
+.items{list-style:none;margin:0;padding:0}
+.item{position:relative;padding:.6rem 0;border-top:1px solid #efece5;break-inside:avoid;page-break-inside:avoid}.item:first-child{border-top:0;padding-top:.1rem}
+.numbered .item{padding-left:2.25rem}.numbered .item-n{position:absolute;left:0;top:.65rem;font-size:.75rem;font-weight:700;color:#77736a;width:1.75rem;height:1.5rem;border-radius:6px;background:#f2efe8;display:flex;align-items:center;justify-content:center}
+.numbered .item:first-child .item-n{top:.15rem}
+.slides .item{padding-left:0}.slides .item-n{position:static;display:inline-block;width:auto;height:auto;padding:.1rem .5rem;margin:0 0 .3rem;background:#f2efe8;border-radius:6px}
+.slide-t{font-weight:600;color:#141414;margin:0 0 .15rem!important}
+.timeline{border-top:1px solid #efece5}
+.tl-row{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:.55rem 0;border-bottom:1px solid #efece5;break-inside:avoid;page-break-inside:avoid}
+.tl-time{line-height:1.6;padding-top:.05rem}
+.tl-t{display:block;white-space:nowrap;font-weight:600;font-size:.9rem;color:#1f1f1f;font-variant-numeric:tabular-nums}
+.tl-ph{display:block;font-size:.78rem;line-height:1.35;color:#8a857a}
+.note{color:#77736a;font-size:.85rem;line-height:1.45;margin-top:.15rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{background:#eef4f2;color:#0b4f44;border-radius:999px;padding:.2rem .7rem;font-size:.85rem;font-weight:600;line-height:1.5}
+.chip-alt{background:#f2efe8;color:#3d3b36}
+.tip .val{background:#fbf7ea;border-left:3px solid #e2c766;padding:.5rem .8rem;font-size:.92rem}
+.frame{border:1px solid #e4e0d6;border-radius:10px;padding:.9rem 1rem 1rem;margin:0 0 1.1rem;background:#fcfbf8}
+.frame-bar{display:flex;align-items:baseline;flex-wrap:wrap;gap:.2rem .6rem;font-size:.85rem;line-height:1.3;padding-bottom:.65rem;margin-bottom:.8rem;border-bottom:1px solid #efece5;break-after:avoid;page-break-after:avoid}
+.fb-name{font-weight:700}.fb-sub{color:#8a857a}
+.in-frame{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:.75rem;align-items:start;margin-bottom:.8rem}
+.in-frame .f-head{order:2;margin:0;min-height:0}.in-frame .f-head .label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.frame-email [data-key=subject_line] .val{font-weight:700;font-size:1.1rem;line-height:1.4;color:#141414}
+.frame-email [data-key=preview_text] .val{color:#8a857a;font-size:.92rem}
+.frame-email [data-key=preview_text]{padding-bottom:.8rem;border-bottom:1px solid #efece5}
+.cta-wrap{margin:.2rem 0 0}.cta-val{display:inline-block;background:#0e6b5c;color:#fff;font-weight:600;border-radius:8px;padding:.55rem 1.1rem;line-height:1.4;max-width:100%}
+.frame-ig{max-width:30rem}.ig-img{margin:0 0 .8rem;position:relative;max-width:22.5rem}
+.ig-img img{display:block;width:100%;height:auto;border-radius:8px;background:#e9e5dc}
+.tbl{width:100%;border-collapse:collapse;font-size:.9rem}.tbl th{text-align:left;color:#77736a;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid #e4e0d6;padding:.4rem}.tbl td{border-bottom:1px solid #efece5;padding:.45rem .4rem;vertical-align:top}
+.kv dt{font-weight:600;margin-top:.4rem}.kv dd{margin:.15rem 0 0}
+.muted{color:#77736a;font-size:.875rem}
+.appendix{background:#fff;border:1px solid #e4e0d6;border-radius:12px;padding:1.1rem 1.5rem;margin:1.75rem 0 1.25rem}
+.appendix summary{cursor:pointer;list-style-position:outside;line-height:1.4}.appendix[open] summary{margin-bottom:1rem}
+.appendix .sec{display:inline;font-size:1.1rem}section.appendix .sec{display:block;margin-bottom:1rem}
+.pull{margin:0 0 1rem;padding:.2rem 0 .2rem 1rem;border-left:3px solid #0e6b5c;font-size:1.15rem;line-height:1.5;font-weight:500;color:#141414}
+.lead{color:#3d3b36;margin:1rem 0}
+.gl{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1.5rem;margin:1rem 0}.gl dd{margin:.15rem 0 0;font-size:.95rem;line-height:1.5}.gl-i{break-inside:avoid;page-break-inside:avoid}
+.gl-i:last-child:nth-child(odd){grid-column:1/-1}
+h3.minor{font-size:.75rem;text-transform:uppercase;letter-spacing:.07em;color:#77736a;margin:1.25rem 0 .4rem;break-after:avoid;page-break-after:avoid}
+.ideas{margin:0;padding-left:1.2rem}.ideas li{margin-bottom:.4rem;break-inside:avoid;page-break-inside:avoid}.gl-p{margin:0}
+.foot{text-align:center;color:#99938a;font-size:.8rem;padding:.75rem 0 1.5rem}.mark{font-weight:600;color:#77736a}
+.toolbar{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;padding:.5rem 1rem;background:rgba(247,245,240,.96);border-bottom:1px solid #e4e0d6;backdrop-filter:blur(6px)}
+.tb-title{font-weight:700;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1}
+.edit-note{display:none;flex-basis:100%;text-align:right;font-size:.8rem;color:#77736a;margin:-.15rem 0 0}body.has-edits .edit-note{display:block}
+.btn,.copy-btn{font:inherit;font-weight:600;border-radius:8px;cursor:pointer;line-height:1.2;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center}
+.btn{font-size:.85rem;padding:.5rem .9rem;border:1px solid #d6d1c4;background:#fff;color:#1f1f1f}
+.btn.primary,body.has-edits #tb-print{background:#0e6b5c;border-color:#0e6b5c;color:#fff}
+body.has-edits #tb-pdf{background:#fff;border-color:#d6d1c4;color:#1f1f1f}
+.btn.ghost{background:transparent;border-color:transparent;color:#55524b}
+a.dl[href=''],a.dl[href*='__PRISMAI_PDF']{display:none}
+.copy-btn{font-size:.75rem;padding:.25rem .65rem;border:1px solid #d6d1c4;background:#fff;color:#3d3b36}
+.copy-btn:hover,.btn:hover{border-color:#a59f92}.copy-btn.done{background:#0e6b5c;border-color:#0e6b5c;color:#fff}
+.val[contenteditable]:not(.cta-val){padding:2px 6px;margin:-2px -6px}
+[contenteditable]{outline:1px dashed transparent;outline-offset:0;border-radius:4px;transition:outline-color .15s}
+[contenteditable]:hover{outline:1px dashed #8fbfb4;cursor:text}[contenteditable]:focus{outline:2px solid #0e6b5c;background:#fff}.cta-val[contenteditable]:focus{background:#0e6b5c}
+.toast{position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:#1f1f1f;color:#fff;padding:.5rem .9rem;border-radius:8px;font-size:.85rem;z-index:60;opacity:0;transition:opacity .2s;pointer-events:none}.toast.show{opacity:1}
+@media (min-width:641px){.sm-only{display:none}}
+@media (max-width:640px){.wrap{padding:.9rem .85rem 1.5rem}.card{padding:1rem 1rem 1.15rem}.appendix{padding:1rem}.gl{grid-template-columns:1fr}.gl-i:last-child:nth-child(odd){grid-column:auto}.toolbar{padding:.45rem .6rem;gap:.35rem}.tb-title{display:none}.btn{font-size:.8rem;padding:.45rem .6rem;flex:1;justify-content:center}.lg-only{display:none}.edit-note{text-align:center}.plan li+li::before{display:none}.tl-row{grid-template-columns:1fr;gap:.15rem}.tl-time{display:flex;gap:.5rem;align-items:baseline;flex-wrap:wrap}.tl-t,.tl-ph{display:inline}.frame{padding:.75rem}.frame-ig{max-width:none}.card-head h2{font-size:1.15rem}}
+@media print{html{font-size:14px}body{background:#fff}.in-frame{display:block}.toolbar,.copy-btn,.toast,.hint,.img-dl{display:none!important}[contenteditable]{outline:none!important}.card,.appendix{border-color:#ddd}@page{size:Letter;margin:.6in}}</style></head><body><div class="toolbar" role="toolbar" aria-label="Report tools"><span class="tb-title">Spoke &amp; Wheel · 4-Platform Content Pack</span><a class="btn primary dl" id="tb-pdf" href="report.pdf" download="spoke-and-wheel-content-pack.pdf" data-name="spoke-and-wheel-content-pack" target="_blank" rel="noopener">Download PDF</a><button type="button" class="btn" id="tb-print"><span class="lg-only">Print my edited version</span><span class="sm-only">Print edits</span></button><button type="button" class="btn ghost" id="tb-reset">Reset</button><p class="edit-note" role="status">You've edited this page. The download is the original.</p></div><div class="wrap"><header class="hero"><div class="hero-text"><div class="wordmark">Spoke &amp; Wheel</div><div class="hero-rule"><p class="kicker">4-Platform Content Pack</p><h1>Bike Maintenance&nbsp;Workshop</h1><p class="sub">Spoke &amp; Wheel launches free hands-on Saturday bike maintenance workshops for the local cycling community</p><p class="meta-row"><span class="mi"><span class="mk">For</span> local commuters and weekend cyclists</span><span class="mi"><span class="mk">Voice</span> Conversational</span></p></div></div></header><div class="content-head"><h2 class="sec">Your ready-to-post content</h2><p class="hint">Click any post to edit. Copy buttons copy just the text.</p></div><ol class="plan" aria-label="Posting order"><li><a href="#p-linkedin"><span class="step" style="border-color:#0a66c2;color:#0a66c2">1</span>LinkedIn</a></li><li><a href="#p-email_newsletter"><span class="step" style="border-color:#7c3aed;color:#7c3aed">2</span>Email Newsletter</a></li><li><a href="#p-instagram"><span class="step" style="border-color:#d62976;color:#d62976">3</span>Instagram</a></li><li><a href="#p-youtube_shorts"><span class="step" style="border-color:#ff0000;color:#ff0000">4</span>YouTube Shorts</a></li></ol><section class="card" id="p-linkedin" style="--pc:#0a66c2"><div class="card-head"><span class="pdot" style="background:#0a66c2"></span><h2>LinkedIn</h2><span class="badge">Post 1</span><button type="button" class="copy-btn" data-copy="card">Copy all</button></div><div class="frame frame-li"><div class="frame-bar"><span class="fb-name">Spoke &amp; Wheel</span><span class="fb-sub">LinkedIn post preview</span></div><div class="field in-frame" data-key="post"><div class="f-head"><span class="label">Post text</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>A flat tire shouldn&#39;t end your ride—or your confidence.</p><div class="gap"></div><p>Starting next month, Spoke &amp; Wheel is running free Saturday morning bike maintenance workshops for anyone who wants to stop being stranded by simple fixes. We&#39;re talking flats, brake adjustments, chain maintenance—the stuff that actually matters.</p><div class="gap"></div><p>Here&#39;s what makes this different: you work on <em>your own bike</em> with our mechanics walking you through every step. Tools, coffee, and zero judgment included. All skill levels welcome.</p><div class="gap"></div><p>This isn&#39;t gatekeeping disguised as expertise. Basic bike maintenance is a fundamental right, not a professional secret. When you know how to fix your own bike, you ride further, ride more confidently, and actually enjoy the freedom that cycling promises.</p><div class="gap"></div><p>Every Saturday, 9–11 AM at Maple Street. Show up, learn something real, grab a coffee, meet other riders who get it.</p><div class="gap"></div><p>Join us this Saturday at 9 AM to master your bike maintenance.</p></div></div></div><div class="field" data-key="carousel_slides"><div class="f-head"><span class="label">Carousel slides</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><ol class="items numbered slides"><li class="item"><span class="item-n">Slide 1</span><div class="val" contenteditable="true" spellcheck="true"><p class="slide-t">Free Saturday Bike Maintenance Workshops</p><p>Every Saturday, 9–11 AM at Spoke &amp; Wheel on Maple Street. Learn the fixes that keep you riding.</p></div></li><li class="item"><span class="item-n">Slide 2</span><div class="val" contenteditable="true" spellcheck="true"><p class="slide-t">Hands-On Skill Acquisition</p><p>Our mechanics walk you through demos using your own bike. Practical experience on your equipment means the skills stick and work the moment you need them.</p></div></li><li class="item"><span class="item-n">Slide 3</span><div class="val" contenteditable="true" spellcheck="true"><p class="slide-t">Zero-Barrier Accessibility</p><p>Free workshops. All skill levels. Tools and coffee provided. We&#39;ve removed every excuse—financial, intimidation, or otherwise—that keeps riders from learning.</p></div></li><li class="item"><span class="item-n">Slide 4</span><div class="val" contenteditable="true" spellcheck="true"><p class="slide-t">Essential Roadside Repair Coverage</p><p>Flats, brake adjustments, chain maintenance. We focus on the most common mechanical issues that actually strand commuters and weekend riders.</p></div></li><li class="item"><span class="item-n">Slide 5</span><div class="val" contenteditable="true" spellcheck="true"><p class="slide-t">Community-Centric Scheduling</p><p>Every Saturday morning creates a reliable touchpoint for your local cycling neighborhood. Consistent, predictable, and built for you.</p></div></li><li class="item"><span class="item-n">Slide 6</span><div class="val" contenteditable="true" spellcheck="true"><p class="slide-t">Stop Being Stranded. Start Riding Free.</p><p>Show up this Saturday at 9 AM. Learn to fix your bike. Ride with real confidence.</p></div></li></ol></div><div class="field f-tags" data-key="hashtags"><div class="f-head"><span class="label">Hashtags</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="chips"><span class="chip" contenteditable="true" spellcheck="true">#BikeMaintenanceWorkshop</span><span class="chip" contenteditable="true" spellcheck="true">#CyclingCommunity</span><span class="chip" contenteditable="true" spellcheck="true">#BikeRepair</span><span class="chip" contenteditable="true" spellcheck="true">#LocalCycling</span><span class="chip" contenteditable="true" spellcheck="true">#SpokeAndWheel</span></div></div></section><section class="card" id="p-email_newsletter" style="--pc:#7c3aed"><div class="card-head"><span class="pdot" style="background:#7c3aed"></span><h2>Email Newsletter</h2><span class="badge">Post 2</span><button type="button" class="copy-btn" data-copy="card">Copy all</button></div><div class="frame frame-email"><div class="frame-bar"><span class="fb-name">Spoke &amp; Wheel</span><span class="fb-sub">To: your subscribers</span></div><div class="field in-frame" data-key="subject_line"><div class="f-head"><span class="label">Subject line</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Free bike maintenance starts Saturday</p></div></div><div class="field in-frame" data-key="preview_text"><div class="f-head"><span class="label">Inbox preview text</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Learn to fix flats, brakes &amp; chains—no experience needed.</p></div></div><div class="field in-frame" data-key="body"><div class="f-head"><span class="label">Email body</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>You know that sinking feeling when your chain slips or you get a flat three miles from home? What if you could handle it yourself?</p><div class="gap"></div><p>Starting next month, Spoke &amp; Wheel is hosting free Saturday morning workshops (9–11 AM) where you&#39;ll learn the essential repairs that actually matter: fixing flats, adjusting brakes, cleaning chains. Our mechanics work directly on your bike, so every skill translates immediately to the road.</p><div class="gap"></div><p>No experience required. All tools and coffee provided. Just show up.</p><div class="gap"></div><p>This is about giving every rider the self-sufficiency to maintain their own equipment and the confidence to ride further. Because mechanical breakdowns shouldn&#39;t limit your freedom.</p><div class="gap"></div><p>Join us this Saturday at 9 AM at Spoke &amp; Wheel on Maple Street. Your next ride starts here.</p></div></div><div class="field in-frame" data-key="cta"><div class="f-head"><span class="label">Call to action</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="cta-wrap"><span class="val cta-val" contenteditable="true" spellcheck="true">Reserve your spot this Saturday at 9 AM—just show up at Spoke &amp; Wheel on Maple Street.</span></div></div></div></section><section class="card" id="p-instagram" style="--pc:#d62976"><div class="card-head"><span class="pdot" style="background:#d62976"></span><h2>Instagram</h2><span class="badge">Post 3</span><button type="button" class="copy-btn" data-copy="card">Copy all</button></div><div class="field" data-key="reel_hook" data-all="0"><div class="f-head"><span class="label">Reel on-screen hook (first 3 seconds)</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Never get stranded by a flat tire again.</p></div></div><div class="frame frame-ig"><div class="frame-bar"><span class="fb-name">Spoke &amp; Wheel</span><span class="fb-sub">Instagram post preview</span></div><figure class="ig-img"><img src="assets/cover.png" alt="Post image for Spoke &amp; Wheel"><button type="button" class="img-dl" data-dl-img="assets/cover.png" data-name="spoke-and-wheel-image">Download image</button></figure><div class="field in-frame" data-key="caption"><div class="f-head"><span class="label">Caption</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Imagine the absolute freedom of a ride where you never have to worry about a flat tire ruining your day.</p><div class="gap"></div><p>Mechanical stress shouldn&#39;t keep you off the road. At Spoke &amp; Wheel, we believe basic bike maintenance isn&#39;t a professional secret—it&#39;s a fundamental right for every rider. That&#39;s why we&#39;re launching free Saturday morning workshops on Maple Street to help you take control of your ride.</p><div class="gap"></div><p>Every Saturday from 9 to 11 AM, our mechanics provide hands-on demos for:</p><p>🛠 Fixing flats on the fly</p><p>🛠 Adjusting your own brakes</p><p>🛠 Proper chain maintenance</p><div class="gap"></div><p>Bring your own bike and get grease on your hands while we provide the tools and the coffee. Whether you&#39;re a daily commuter or a weekend explorer, join our supportive community and gain the self-sufficiency to ride further with confidence.</p><div class="gap"></div><p>Join us at Spoke &amp; Wheel this Saturday at 9 AM to master your bike maintenance!</p></div></div><div class="field f-tags in-frame" data-key="hashtags"><div class="f-head"><span class="label">Hashtags</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="chips"><span class="chip" contenteditable="true" spellcheck="true">#bikemaintenanceworkshop</span><span class="chip" contenteditable="true" spellcheck="true">#cyclingcommunity</span><span class="chip" contenteditable="true" spellcheck="true">#freecyclingclass</span><span class="chip" contenteditable="true" spellcheck="true">#bikerepair</span><span class="chip" contenteditable="true" spellcheck="true">#SpokeAndWheel</span><span class="chip" contenteditable="true" spellcheck="true">#biketowork</span><span class="chip" contenteditable="true" spellcheck="true">#weekendcyclist</span><span class="chip" contenteditable="true" spellcheck="true">#localriders</span></div></div></div></section><section class="card" id="p-youtube_shorts" style="--pc:#ff0000"><div class="card-head"><span class="pdot" style="background:#ff0000"></span><h2>YouTube Shorts</h2><span class="badge">Post 4</span><button type="button" class="copy-btn" data-copy="card">Copy all</button></div><div class="field" data-key="title"><div class="f-head"><span class="label">Video title</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Stop Worrying About Flat Tires: Free Bike Workshops 🚲</p></div></div><div class="field" data-key="script"><div class="f-head"><span class="label">Spoken script</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Imagine never worrying about a flat tire ruining your ride again. At Spoke &amp; Wheel on Maple Street, we believe basic bike maintenance isn&#39;t a professional secret—it&#39;s a right every rider should have for free. That&#39;s why every Saturday from 9 to 11 AM, we&#39;re hosting hands-on workshops. You don&#39;t just watch us; you bring your own bike and our mechanics walk you through the repairs. We cover the essentials that usually strand riders: fixing flats, adjusting brakes, and chain maintenance. We provide all the tools and even the coffee to keep the community vibes going. You&#39;ll gain the self-sufficiency to maintain your own gear and the confidence to explore further without fear of mechanical failure. The freedom of the ride belongs to you. Join us at Spoke &amp; Wheel this Saturday at 9 AM to master your bike maintenance.</p></div></div><div class="field" data-key="on_screen_text" data-all="0"><div class="f-head"><span class="label">On-screen text overlays</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="timeline"><div class="tl-row"><div class="tl-time"><span class="tl-t">0–3s</span></div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Never fear a flat tire again</p></div><div class="note">Big bold static white text on black background</div></div></div><div class="tl-row"><div class="tl-time"><span class="tl-t">15–18s</span></div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Hands-on repair with YOUR bike</p></div><div class="note">Animated word-by-word reveal, high contrast yellow and black</div></div></div><div class="tl-row"><div class="tl-time"><span class="tl-t">25–28s</span></div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Master flats, brakes, and chains</p></div><div class="note">Static text, lower third placement</div></div></div><div class="tl-row"><div class="tl-time"><span class="tl-t">35–38s</span></div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Free tools &amp; fresh coffee</p></div><div class="note">Bold kinetic text, center screen</div></div></div><div class="tl-row"><div class="tl-time"><span class="tl-t">52–60s</span></div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Join us Saturday @ 9AM</p></div><div class="note">Bright accent color, pulsing animation</div></div></div></div></div><div class="field" data-key="b_roll_shot_ideas" data-all="0"><div class="f-head"><span class="label">B-roll shot ideas</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="timeline"><div class="tl-row"><div class="tl-time"><span class="tl-t">0–8s</span><span class="tl-ph">Early — during hook</span></div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Close-up of a frustrated cyclist looking at a flat tire on a busy city street corner.</p></div></div></div><div class="tl-row"><div class="tl-time"><span class="tl-t">10–35s</span><span class="tl-ph">Mid — during key points</span></div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>A mechanic&#39;s grease-stained hands guiding a participant as they adjust a brake cable on their own bike.</p></div></div></div><div class="tl-row"><div class="tl-time"><span class="tl-t">10–35s</span><span class="tl-ph">Mid — during key points</span></div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Close-up of steam rising from a coffee mug next to a set of professional bike tools on a wooden workbench.</p></div></div></div><div class="tl-row"><div class="tl-time"><span class="tl-t">38–50s</span><span class="tl-ph">Late — during payoff</span></div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Wide shot of a diverse group of cyclists laughing and chatting in the sun-drenched Spoke &amp; Wheel workshop.</p></div></div></div><div class="tl-row"><div class="tl-time"><span class="tl-t">52–60s</span><span class="tl-ph">Late — during CTA</span></div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Creator standing in front of the Spoke &amp; Wheel storefront on Maple Street, smiling and gesturing for the viewer to come inside.</p></div></div></div></div></div><div class="field" data-key="description"><div class="f-head"><span class="label">Video description</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Stop letting mechanical anxiety hold back your rides. Join our free bike maintenance workshop every Saturday to learn how to fix a flat tire and more. See you at Spoke &amp; Wheel on Maple Street at 9 AM!</p></div></div><div class="field f-tags" data-key="hashtags"><div class="f-head"><span class="label">Hashtags</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="chips"><span class="chip" contenteditable="true" spellcheck="true">#Shorts</span><span class="chip" contenteditable="true" spellcheck="true">#bikemaintenanceworkshop</span><span class="chip" contenteditable="true" spellcheck="true">#freecyclingclass</span><span class="chip" contenteditable="true" spellcheck="true">#fixaflattire</span><span class="chip" contenteditable="true" spellcheck="true">#SpokeAndWheel</span></div></div></section><details class="appendix"><summary><span class="sec">At a glance: strategy notes</span><span class="muted"> · what PrismAI found in your content</span></summary><blockquote class="pull">Empowering local cyclists through free, hands-on education builds a more confident and connected riding community.</blockquote><p class="meta-row"><span class="mi"><span class="mk">Content type</span> Announcement</span><span class="mi"><span class="mk">Tone</span> Welcoming, practical, conversational, and community-oriented</span><span class="mi"><span class="mk">Keyword</span> bike maintenance workshop</span></p><p class="lead">Spoke &amp; Wheel on Maple Street is launching free Saturday morning bike maintenance workshops starting next month. Running from 9 to 11 AM, these sessions invite riders of all skill levels to learn essential repairs like fixing flats, adjusting brakes, and chain maintenance. Mechanics provide hands-on demonstrations using the participants&#39; own bikes, with all necessary tools and coffee provided by the shop to foster a supportive community environment.</p><dl class="gl"><div class="gl-i"><dt class="label">Problem it solves</dt><dd>Mechanical illiteracy and the anxiety of being stranded mid-ride due to simple, fixable bike issues.</dd></div><div class="gl-i"><dt class="label">What your audience wants</dt><dd>Riders gain the self-sufficiency to maintain their own equipment and the confidence to ride longer distances.</dd></div><div class="gl-i"><dt class="label">Emotional hook</dt><dd>The absolute freedom of a ride where you never have to worry about a flat tire ruining your day.</dd></div><div class="gl-i"><dt class="label">Contrarian angle</dt><dd>Basic bike maintenance isn&#39;t a specialized professional secret; it&#39;s a fundamental right every rider should exercise for free.</dd></div></dl><h3 class="minor">Key ideas</h3><ol class="ideas"><li><strong>Hands-on skill acquisition</strong><div class="note">Practical experience on one&#39;s own equipment ensures the skills are directly applicable and memorable.</div></li><li><strong>Zero-barrier accessibility</strong><div class="note">Removes financial and intimidation barriers that often prevent new riders from learning maintenance.</div></li><li><strong>Essential roadside repair coverage</strong><div class="note">Addresses the most common mechanical issues that strand commuters and weekend riders.</div></li><li><strong>Community-centric scheduling</strong><div class="note">Creates a consistent, reliable touchpoint for the local cycling neighborhood.</div></li></ol><h3 class="minor">Who this is for</h3><p class="gl-p">Daily commuters who rely on their bikes for transport and weekend hobbyists who want to explore further without fear of mechanical failure. They value practical skills, neighborhood connections, and a non-intimidating learning environment.</p></details><footer class="foot">Prepared for Spoke &amp; Wheel · October 17th, 2026 at 5:00 PM · <span class="mark">Made with PrismAI</span></footer></div><div id="toast" class="toast" role="status" aria-live="polite"></div><script>(function clientMain() {
+  var root = document.documentElement; root.className += " js";
+  var KEY = "prismai-edits:" + location.host + location.pathname, store = null;
+  try { localStorage.setItem(KEY + ":t", "1"); localStorage.removeItem(KEY + ":t"); store = localStorage; } catch (e) {}
+  var els = document.querySelectorAll("[contenteditable]");
+  function fp(t) { var h = 0; for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) | 0; return String(h); }
+  var originals = []; for (var i = 0; i < els.length; i++) originals.push(fp(els[i].textContent));
+  var sig = fp(originals.join("|"));
+  function setEdited(on) { var b = document.body.classList; if (on) b.add("has-edits"); else b.remove("has-edits"); }
+  function escT(t) { return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function setText(el, t) {
+    if (el.tagName === "SPAN") { el.textContent = t; return; }
+    el.innerHTML = String(t).split(/\n/).map(function (l) { return l.trim() ? "<p>" + escT(l) + "</p>" : '<div class="gap"></div>'; }).join("");
+  }
+  // Plain text of one value: paragraphs on their own lines, blank line where the post has a gap
+  function plain(el) {
+    if (!el) return "";
+    var out = [];
+    (function walk(n) {
+      for (var c = n.firstChild; c; c = c.nextSibling) {
+        if (c.nodeType === 3) { if (c.nodeValue.trim()) out.push(c.nodeValue.trim()); continue; }
+        if (c.nodeType !== 1) continue;
+        if (c.classList.contains("gap")) out.push("");
+        else if (c.tagName === "UL" || c.tagName === "OL") { for (var li = c.firstElementChild; li; li = li.nextElementSibling) out.push("- " + li.innerText.trim()); }
+        else if (/^(P|DIV|H\d)$/.test(c.tagName) && c.querySelector("p,div")) walk(c);
+        else out.push(c.innerText.replace(/\n+$/, ""));
+      }
+    })(el);
+    return out.join("\n").replace(/\n{3,}/g, "\n\n").trim();
+  }
+  function fieldText(f) {
+    var chips = f.querySelectorAll(".chip");
+    if (chips.length) { var a = []; for (var i = 0; i < chips.length; i++) a.push(chips[i].innerText.trim()); return a.join(" "); }
+    var rows = f.querySelectorAll(".tl-row");
+    if (rows.length) { var b = []; for (var j = 0; j < rows.length; j++) { var t = rows[j].querySelector(".tl-t"); t = t ? t.innerText.trim() : ""; b.push((t ? t + ": " : "") + plain(rows[j].querySelector(".val"))); } return b.join("\n\n"); }
+    var items = f.querySelectorAll(".item");
+    if (items.length) { var c = []; for (var k = 0; k < items.length; k++) c.push(plain(items[k].querySelector(".val"))); return c.join("\n\n"); }
+    var tbl = f.querySelector("table"); if (tbl) return tbl.innerText.trim();
+    return plain(f.querySelector(".val"));
+  }
+  function toast(msg) { var t = document.getElementById("toast"); if (!t) return; t.textContent = msg; t.className = "toast show"; clearTimeout(toast._t); toast._t = setTimeout(function () { t.className = "toast"; }, 2600); }
+  if (store) {
+    try {
+      var saved = JSON.parse(store.getItem(KEY) || "null");
+      if (saved && saved.sig === sig && saved.n === els.length && saved.edits) {
+        var any0 = false;
+        for (var k in saved.edits) { var idx = +k; if (els[idx] && typeof saved.edits[k] === "string") { setText(els[idx], saved.edits[k]); any0 = true; } }
+        setEdited(any0);
+      }
+    } catch (e) {}
+  }
+  var timer = null;
+  function save() {
+    var edits = {}, any = false;
+    for (var i = 0; i < els.length; i++) if (fp(els[i].textContent) !== originals[i]) { edits[i] = els[i].innerText; any = true; }
+    setEdited(any);
+    if (!store) return;
+    try { if (any) store.setItem(KEY, JSON.stringify({ sig: sig, n: els.length, edits: edits })); else store.removeItem(KEY); } catch (e) {}
+  }
+  document.addEventListener("input", function (e) {
+    if (e.target && e.target.closest && e.target.closest("[contenteditable]")) { setEdited(true); clearTimeout(timer); timer = setTimeout(save, 400); }
+  });
+  document.addEventListener("paste", function (e) {
+    var t = e.target && e.target.closest && e.target.closest("[contenteditable]"); if (!t || !e.clipboardData) return;
+    e.preventDefault(); if (document.execCommand) document.execCommand("insertText", false, e.clipboardData.getData("text/plain"));
+  });
+  function copyText(text, btn) {
+    function done() { var old = btn.getAttribute("data-label") || btn.textContent; btn.setAttribute("data-label", old); btn.textContent = "Copied"; btn.classList.add("done"); clearTimeout(btn._t); btn._t = setTimeout(function () { btn.textContent = old; btn.classList.remove("done"); }, 1500); }
+    function fallback() {
+      var ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.top = "-1000px";
+      document.body.appendChild(ta); ta.select(); var ok = false; try { ok = document.execCommand("copy"); } catch (e) {} document.body.removeChild(ta);
+      if (ok) done(); else toast("Copy is blocked here. Select the text and press Ctrl/Cmd+C.");
+    }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback); else fallback();
+  }
+  // Save a cross-origin file with a proper name: fetch -> blob -> <a download>. Falls back to opening the URL.
+  function saveBlob(blob, name) {
+    var u = URL.createObjectURL(blob), a = document.createElement("a");
+    a.href = u; a.download = name; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(u); }, 4000);
+  }
+  function openUrl(url) { var w = window.open(url, "_blank", "noopener"); if (!w) location.href = url; }
+  function toPng(blob, cb) { // canvas conversion works because the blob is local (CORS already passed in fetch)
+    if (blob.type === "image/png" || !window.createImageBitmap) return cb(blob);
+    createImageBitmap(blob).then(function (bm) {
+      var c = document.createElement("canvas"); c.width = bm.width; c.height = bm.height; c.getContext("2d").drawImage(bm, 0, 0);
+      c.toBlob(function (png) { cb(png || blob); }, "image/png");
+    }, function () { cb(blob); });
+  }
+  function fetchSave(url, name, png, btn) {
+    if (!window.fetch || !window.URL || !URL.createObjectURL) return openUrl(url);
+    var old = btn.textContent; btn.textContent = "Preparing…";
+    fetch(url, { mode: "cors" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.blob(); }).then(function (b) {
+      function fin(x) { var ext = png && x.type === "image/png" ? "png" : (x.type.split("/")[1] || "bin").replace("jpeg", "jpg"); saveBlob(x, name + "." + ext); btn.textContent = old; }
+      if (png) toPng(b, fin); else fin(b);
+    }).catch(function () { btn.textContent = old; openUrl(url); });
+  }
+  function openAll() { var d = document.querySelectorAll("details"); for (var i = 0; i < d.length; i++) d[i].open = true; }
+  window.addEventListener("beforeprint", openAll);
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a#tb-pdf") : null;
+    if (a) { e.preventDefault(); fetchSave(a.href, a.getAttribute("data-name") || "content-pack", false, a); return; }
+    var b = e.target && e.target.closest ? e.target.closest("button") : null; if (!b) return;
+    var kind = b.getAttribute("data-copy");
+    if (b.hasAttribute("data-dl-img")) fetchSave(b.getAttribute("data-dl-img"), b.getAttribute("data-name") || "image", true, b);
+    else if (kind === "field") copyText(fieldText(b.closest(".field")), b);
+    else if (kind === "card") {
+      var fs = b.closest(".card").querySelectorAll(".field"), parts = [];
+      for (var i = 0; i < fs.length; i++) { if (fs[i].getAttribute("data-all") !== "0" && fs[i].querySelector(".copy-btn")) { var t = fieldText(fs[i]); if (t) parts.push(t); } }
+      copyText(parts.join("\n\n"), b);
+    } else if (b.id === "tb-print") {
+      if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+      openAll(); try { window.print(); } catch (err) { toast("Press Ctrl+P (Cmd+P on Mac) to save as PDF."); }
+    } else if (b.id === "tb-reset") {
+      if (!window.confirm || window.confirm("Undo all your edits and restore the original report?")) { try { if (store) store.removeItem(KEY); } catch (err) {} location.reload(); }
+    }
+  });
+})();</script></body></html>
