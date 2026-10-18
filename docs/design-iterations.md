@@ -13,7 +13,7 @@ Between 17 and 18 October 2026 the report went through four review rounds. Each 
 - **Web page:** the published Lotus Loft Yoga report, in Playwright with Chromium 155 at 390px and 1280px wide. Contrast is the WCAG ratio of each element's computed text colour against its first opaque background. Copy all was measured by replacing `navigator.clipboard.writeText` and clicking each card's button.
 - **PDF:** the PDF layout checker in this repo (pdf.js 6.3.289). Its output is in [testing.md](testing.md).
 
-The sample files for each round are in the [gallery](../samples/index.html). The tests re-check them on every push.
+The sample files for each round are in the [gallery](https://kirankri.github.io/prismai-content-repurposer/) (files in [samples/](../samples)). The tests re-check them on every push.
 
 ## Round 1: first review (three samples, including Crumb & Co)
 
