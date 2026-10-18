@@ -62,7 +62,7 @@ Short records of the decisions that shaped PrismAI and this repo. Each has the c
 
 ## 7. Keep prompts and generation logic private
 
-**Context.** PrismAI is a paid product, and the prompts are what a competitor would copy.
+**Context.** PrismAI is built to be sold, and the prompts are what a competitor would copy.
 
 **Decision.** Two repositories:
 - a private one with the prompts, the workflow and the builder;

@@ -1,6 +1,6 @@
 # Architecture
 
-PrismAI runs as one workflow in MindStudio, a no-code builder for multi-step model workflows. MindStudio provides the form, the model calls, JavaScript function blocks, file rendering and hosting. Everything PrismAI-specific is in the prompts and in the JavaScript blocks I wrote.
+PrismAI runs as one workflow in MindStudio, a no-code builder for multi-step model workflows. MindStudio provides the form, the model calls, JavaScript function blocks, file rendering and hosting. Everything PrismAI-specific is in the prompts and in the JavaScript blocks written for it.
 
 This page describes the pipeline at the level of stages. The prompts and the block-by-block map are private.
 
@@ -35,7 +35,7 @@ flowchart TD
 
 ### Stages
 
-1. **Form and license.** The buyer enters the license key from their purchase. The key is checked against the sales records before the content form appears. An invalid key shows the reason and asks again.
+1. **Form and license.** The buyer enters the license key from their purchase. The key is checked against the license records before the content form appears. An invalid key shows the reason and asks again.
 2. **Input clean-up.** If the content is a URL, the page text is fetched. The length is measured, and the chosen platforms are turned into a list of platform keys (all ten if none are chosen).
 3. **Analysis.** One model call reads the source and returns a structured summary of it. Every generator gets that summary, so they agree on the facts.
 4. **Generation.** Three model calls run in parallel, one per format group. Grouping by format keeps each prompt focused. Because the calls run in parallel, the run waits for the slowest of the three rather than all three in turn.
