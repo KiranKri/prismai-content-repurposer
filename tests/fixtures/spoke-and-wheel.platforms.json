@@ -1,0 +1,62 @@
+{
+  "_fixture_note": "Synthetic test data for the Spoke & Wheel test brand: the platforms part of a report. Not a real report and not a real customer.",
+  "platforms": {
+    "linkedin": {
+      "content": "LiPost first paragraph.\n\nLiPost second paragraph.",
+      "carousel_slides": [
+        "SlideOne fixing a flat",
+        "SlideTwo adjusting brakes"
+      ],
+      "hashtags": [
+        "#BikeRepair",
+        "CyclingCommunity"
+      ],
+      "usage_tip": "UsageNoteLi post the carousel as a PDF"
+    },
+    "instagram": {
+      "caption": "IgCaption hook line.\n\nIgCaption body.",
+      "hashtags": [
+        "#BikeMaintenance",
+        "#SaturdayRide"
+      ],
+      "reel_hook": "ReelHookText fix a flat in 5 minutes",
+      "production_notes": "ProdNotesText film the workshop bench"
+    },
+    "youtube_shorts": {
+      "title": "YtTitle Fix a flat tire",
+      "script": "SpokenScriptText Hey riders, here is how.",
+      "description": "YtDesc Free Saturday workshops at Spoke & Wheel.",
+      "on_screen_text": [
+        {
+          "text": "OverlayOne Flat tire?",
+          "style_note": "Bold white text",
+          "timing": "Appears at 0–3 seconds, as the flat tire is shown"
+        },
+        {
+          "text": "OverlayTwo Brakes",
+          "timing": "Appears at 10-13s, as brakes are mentioned"
+        },
+        {
+          "text": "OverlayThree Join us",
+          "timing": "Shown at 50–58 seconds, during the sign-off"
+        }
+      ],
+      "b_roll_ideas": [
+        "BrollOne close-up of a tire lever",
+        "BrollTwo chain being cleaned"
+      ],
+      "hashtags": [
+        "#BikeTips",
+        "#Shorts"
+      ],
+      "usage_tip": "UsageNoteYt post on Friday evening"
+    },
+    "email_newsletter": {
+      "subject_line": "MailSubject Free bike workshops start Saturday",
+      "preview_text": "MailPreview Bring your bike, we bring the tools",
+      "body": "MailBody Hi neighbor,\n\nMailBody We are starting free workshops.",
+      "cta": "MailCta Save your spot",
+      "usage_tip": "UsageNoteMail send on Thursday"
+    }
+  }
+}
