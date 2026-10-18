@@ -1,0 +1,85 @@
+{
+  "_note": "One entry per sample. knownIssues lists what the checks in tests/ find in each build; the tests fail if the findings change. Builds before the current one are kept to show the review history.",
+  "samples": [
+    {
+      "slug": "lotus-loft-yoga",
+      "brand": "Lotus Loft Yoga",
+      "title": "Beginner Yoga Series",
+      "platforms": ["LinkedIn", "Email Newsletter", "Instagram", "YouTube Shorts"],
+      "built": "2026-10-18 09:47 UTC",
+      "template": "v7",
+      "round": "Latest build (after round 4)",
+      "current": true,
+      "note": "Fictional demo brand. Latest MindStudio build, with the round 4 fixes.",
+      "knownIssues": {
+        "pdf": ["fail page 4 blank-space"],
+        "copyAll": [],
+        "timeline": []
+      }
+    },
+    {
+      "slug": "masala-corner",
+      "brand": "Masala Corner",
+      "title": "Lunch Thali Subscription",
+      "platforms": ["LinkedIn", "Email Newsletter", "Instagram", "YouTube Shorts"],
+      "built": "2026-10-17 19:46 UTC",
+      "template": "v6",
+      "round": "Round 4",
+      "current": false,
+      "note": "Test brand. Round 4 build, before the timeline and Instagram fixes.",
+      "knownIssues": {
+        "pdf": ["warn page 5 fragment-top", "warn page 6 blank-space"],
+        "copyAll": [],
+        "timeline": ["stray-phase"]
+      }
+    },
+    {
+      "slug": "spoke-and-wheel",
+      "brand": "Spoke & Wheel",
+      "title": "Bike Maintenance Workshop",
+      "platforms": ["LinkedIn", "Email Newsletter", "Instagram", "YouTube Shorts"],
+      "built": "2026-10-17 17:00 UTC",
+      "template": "v5",
+      "round": "Round 3",
+      "current": false,
+      "note": "Test brand. Round 3 build.",
+      "knownIssues": {
+        "pdf": ["warn page 4 stranded-heading", "fail page 7 blank-space"],
+        "copyAll": ["linkedin includes carousel_slides", "youtube_shorts includes script"],
+        "timeline": []
+      }
+    },
+    {
+      "slug": "brew-and-co",
+      "brand": "Brew & Co",
+      "title": "loyalty app",
+      "platforms": ["Instagram", "YouTube Shorts", "Email Newsletter"],
+      "built": "2026-10-17 16:00 UTC",
+      "template": "v4",
+      "round": "Round 2",
+      "current": false,
+      "note": "Test brand. Round 2 build, the first redesign.",
+      "knownIssues": {
+        "pdf": ["warn page 4 fragment-top"],
+        "copyAll": ["instagram includes reel_hook", "youtube_shorts includes b_roll_shot_ideas", "youtube_shorts includes on_screen_text", "youtube_shorts includes script"],
+        "timeline": ["raw-time"]
+      }
+    },
+    {
+      "slug": "crumb-and-co",
+      "brand": "Crumb & Co",
+      "title": "PrismAI Report – Crumb & Co",
+      "platforms": ["Email Newsletter", "YouTube Shorts"],
+      "built": "2026-10-17 13:44 UTC",
+      "template": "v3",
+      "round": "Round 1",
+      "current": false,
+      "note": "Test brand. Round 1 build (sample B), the original layout.",
+      "knownIssues": {
+        "pdf": ["fail document body-font", "fail page 1 min-font", "fail page 2 min-font", "warn page 2 blank-space", "fail page 3 min-font"],
+        "copyAll": ["email_newsletter labels on clipboard", "youtube_shorts includes b_roll_shot_ideas", "youtube_shorts includes on_screen_text", "youtube_shorts includes script", "youtube_shorts labels on clipboard"],
+        "timeline": []
+      }
+    }
+  ]
+}

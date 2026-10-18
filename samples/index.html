@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrismAI Sample Reports</title>
+<meta name="description" content="Sample PrismAI content packs: interactive web reports and print-ready PDFs generated for test brands.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root { --bg: #f7f6f2; --card: #ffffff; --ink: #1c1b18; --muted: #5f5b52; --line: #e4e0d6; --accent: #0e6b5c; --chip: #efece5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161614; --card: #201f1c; --ink: #f1efe9; --muted: #b3ada1; --line: #36342f; --accent: #5cc5ae; --chip: #2b2a26; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 40px 16px 56px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; letter-spacing: -.01em; }
+  .lede { color: var(--muted); max-width: 46rem; margin: 0 0 2rem; }
+  h2 { font-size: 1.05rem; margin: 2.25rem 0 .9rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+  .card.current { border: 2px solid var(--accent); }
+  .shot { display: block; aspect-ratio: 16 / 10; background: var(--chip); border-bottom: 1px solid var(--line); overflow: hidden; }
+  .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+  .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: .45rem; flex: 1; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-size: .75rem; font-weight: 600; background: var(--chip); color: var(--muted); border-radius: 999px; padding: 2px 9px; }
+  .tag.now { background: var(--accent); color: var(--card); }
+  .brand { font-weight: 700; font-size: 1.05rem; margin: 0; }
+  .what { color: var(--muted); font-size: .9rem; margin: 0; }
+  .links { display: flex; gap: 8px; margin-top: auto; padding-top: .5rem; flex-wrap: wrap; }
+  .links a { font-size: .9rem; font-weight: 600; color: var(--accent); text-decoration: none; border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; }
+  .links a:hover, .links a:focus-visible { border-color: var(--accent); }
+  .links .off { font-size: .85rem; color: var(--muted); padding: 6px 0; }
+  footer { margin-top: 2.5rem; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+  footer a, .lede a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>PrismAI sample reports</h1>
+  <p class="lede">Each sample is a content pack PrismAI generated for a test brand: an interactive web report (posts are editable, with Copy and Copy all buttons) and the print-ready PDF that is delivered with it. The latest build is first. The older builds are kept as they shipped, to show the review rounds described in the <a href="https://github.com/KiranKri/prismai-content-repurposer/blob/main/docs/design-iterations.md">design iterations</a>. All brands are test or demo brands.</p>
+
+  <h2>Latest build</h2>
+  <div class="grid">
+    <article class="card current">
+      <a class="shot" href="lotus-loft-yoga/report.html"><img src="lotus-loft-yoga/screenshots/report-desktop.png" alt="Lotus Loft Yoga web report: header, posting plan and the LinkedIn card" loading="lazy"></a>
+      <div class="body">
+        <div class="meta"><span class="tag now">Latest</span><span class="tag">Template v7</span><span class="tag">18 Oct 2026</span></div>
+        <p class="brand">Lotus Loft Yoga</p>
+        <p class="what">Beginner Yoga Series. LinkedIn, Email Newsletter, Instagram, YouTube Shorts.</p>
+        <div class="links"><a href="lotus-loft-yoga/report.html">Web report</a><a href="lotus-loft-yoga/report.pdf">PDF</a></div>
+      </div>
+    </article>
+  </div>
+
+  <h2>Earlier builds (review history)</h2>
+  <div class="grid">
+    <article class="card">
+      <a class="shot" href="masala-corner/report.html"><img src="masala-corner/screenshots/report-desktop.png" alt="Masala Corner web report, round 4 build" loading="lazy"></a>
+      <div class="body">
+        <div class="meta"><span class="tag">Round 4</span><span class="tag">Template v6</span><span class="tag">17 Oct 2026</span></div>
+        <p class="brand">Masala Corner</p>
+        <p class="what">Lunch Thali Subscription. Built before the timeline and Instagram page-break fixes.</p>
+        <div class="links"><a href="masala-corner/report.html">Web report</a><a href="masala-corner/report.pdf">PDF</a></div>
+      </div>
+    </article>
+    <article class="card">
+      <a class="shot" href="spoke-and-wheel/report.html"><img src="spoke-and-wheel/screenshots/report-desktop.png" alt="Spoke and Wheel web report, round 3 build" loading="lazy"></a>
+      <div class="body">
+        <div class="meta"><span class="tag">Round 3</span><span class="tag">Template v5</span><span class="tag">17 Oct 2026</span></div>
+        <p class="brand">Spoke &amp; Wheel</p>
+        <p class="what">Bike Maintenance Workshop. LinkedIn Copy all still includes the carousel slides.</p>
+        <div class="links"><a href="spoke-and-wheel/report.html">Web report</a><a href="spoke-and-wheel/report.pdf">PDF</a></div>
+      </div>
+    </article>
+    <article class="card">
+      <a class="shot" href="brew-and-co/report.html"><img src="brew-and-co/screenshots/report-desktop.png" alt="Brew and Co web report, round 2 build" loading="lazy"></a>
+      <div class="body">
+        <div class="meta"><span class="tag">Round 2</span><span class="tag">Template v4</span><span class="tag">17 Oct 2026</span></div>
+        <p class="brand">Brew &amp; Co</p>
+        <p class="what">Loyalty app. The first redesign: readable PDF text, Copy buttons near the top.</p>
+        <div class="links"><a href="brew-and-co/report.html">Web report</a><a href="brew-and-co/report.pdf">PDF</a></div>
+      </div>
+    </article>
+    <article class="card">
+      <a class="shot" href="crumb-and-co/report.html"><img src="crumb-and-co/screenshots/report-desktop.png" alt="Crumb and Co web report, round 1 build in the original layout" loading="lazy"></a>
+      <div class="body">
+        <div class="meta"><span class="tag">Round 1</span><span class="tag">Template v3</span><span class="tag">17 Oct 2026</span></div>
+        <p class="brand">Crumb &amp; Co</p>
+        <p class="what">Second bakery location. The original layout: 6.7pt PDF text, labels copied with the posts.</p>
+        <div class="links"><a href="crumb-and-co/report.html">Web report</a><a href="crumb-and-co/report.pdf">PDF</a></div>
+      </div>
+    </article>
+  </div>
+
+  <footer>
+    PrismAI is a live commercial product. These pages are copies of delivered reports, hosted here so they keep working. Source of the tests and docs: <a href="https://github.com/KiranKri/prismai-content-repurposer">github.com/KiranKri/prismai-content-repurposer</a>.
+  </footer>
+</main>
+</body>
+</html>
