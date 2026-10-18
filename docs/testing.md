@@ -1,6 +1,6 @@
 # Testing
 
-What is tested, how, and why. Everything runs with Node 20 or later.
+What is tested, how, and why. Everything runs with Node 22.13 or later (pdf.js 6 needs it). CI uses Node 24.
 
 ```
 npm ci
