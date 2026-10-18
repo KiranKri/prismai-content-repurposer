@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Brew &amp; Co · 3-platform content pack: loyalty app</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"><style>*{box-sizing:border-box}html,body{margin:0;padding:0}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:Inter,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1f1f1f;font-size:1rem;line-height:1.55;background:#f7f5f0;-webkit-print-color-adjust:exact;print-color-adjust:exact;font-feature-settings:'cv11','ss01'}
+.wrap{max-width:46rem;margin:0 auto;padding:1.5rem 1.25rem 2rem}
+a{color:#0e6b5c}
+.avatar{display:inline-flex;align-items:center;justify-content:center;width:2.25rem;height:2.25rem;border-radius:50%;background:#0e6b5c;color:#fff;font-weight:700;font-size:.8rem;letter-spacing:.02em;flex:none;line-height:1}
+.avatar.lg{width:2.75rem;height:2.75rem;font-size:.95rem}
+.brand-row{display:flex;align-items:center;gap:.75rem}.brand-name{font-weight:700;font-size:1.15rem;line-height:1.3}
+.hero{padding:.5rem 0 1rem;border-bottom:1px solid #e4e0d6;margin-bottom:1.25rem}
+h1{font-size:1.85rem;line-height:1.2;letter-spacing:-.015em;margin:1rem 0 .5rem;font-weight:700;color:#141414}
+.kicker{color:#0e6b5c}
+.sub{font-size:1.05rem;line-height:1.5;color:#55524b;margin:0 0 .75rem}
+.meta-row{display:flex;flex-wrap:wrap;gap:.35rem 1.25rem;margin:.25rem 0 0;font-size:.875rem;line-height:1.5;color:#3d3b36}
+.mk{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8a857a;margin-right:.3rem}
+@media (min-width:760px){.hero.has-img{display:grid;grid-template-columns:1fr 17rem;gap:1.5rem;align-items:center}.hero.has-img .cover-img{margin:0}.hero.has-img h1{font-size:1.6rem}}
+.cover-img{margin:0 0 1.25rem;border-radius:12px;overflow:hidden;background:#e9e5dc;aspect-ratio:16/9;position:relative}
+.cover-img img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.cover-img figcaption{position:absolute;right:.6rem;bottom:.6rem}.cover-img figcaption a{background:rgba(255,255,255,.94);color:#1f1f1f;text-decoration:none;font-size:.8rem;font-weight:600;padding:.35rem .7rem;border-radius:999px}
+.sec{font-size:1.2rem;font-weight:700;margin:0;color:#141414;line-height:1.3}
+.content-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem 1rem;margin:0 0 .75rem;break-after:avoid;page-break-after:avoid}
+.hint{font-size:.875rem;color:#6e6a61;margin:0}
+.plan{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1rem;padding:0;counter-reset:none}
+.plan li{display:flex;align-items:center}.plan li+li::before{content:'→';color:#a59f92;margin-right:.5rem}
+.plan a{display:inline-flex;align-items:center;gap:.45rem;text-decoration:none;color:#1f1f1f;font-weight:600;font-size:.9rem;background:#fff;border:1px solid #e4e0d6;border-radius:999px;padding:.2rem .8rem .2rem .25rem}
+.step{display:inline-flex;align-items:center;justify-content:center;width:1.5rem;height:1.5rem;border-radius:50%;color:#fff;font-size:.75rem;font-weight:700;flex:none;line-height:1}
+.step.ghost{background:#d9d4c8;color:#55524b}
+.card{background:#fff;border:1px solid #e4e0d6;border-top:4px solid var(--pc,#0e6b5c);border-radius:12px;padding:1.25rem 1.5rem 1.5rem;margin:0 0 1.25rem;break-inside:auto;page-break-inside:auto}
+.card-head{display:flex;align-items:center;gap:.6rem;margin:0 0 1rem;break-after:avoid;page-break-after:avoid;break-inside:avoid}
+.card-head h2{margin:0;font-size:1.3rem;line-height:1.3;font-weight:700}.card-sub{font-size:.8rem;color:#8a857a;font-weight:600}
+.card-head .copy-btn{margin-left:auto}
+.field{margin:0 0 1.1rem}.field:last-child{margin-bottom:0}.chips,.tbl{break-inside:avoid;page-break-inside:avoid}
+.f-head{display:flex;align-items:center;gap:.5rem;min-height:1.6rem;margin:0 0 .3rem;break-after:avoid;page-break-after:avoid}
+.label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#77736a;line-height:1.4;margin:0}
+.f-head .copy-btn{margin-left:auto}
+.val{max-width:40rem;font-size:1rem;line-height:1.6;color:#1f1f1f;border-radius:6px;orphans:3;widows:3}
+.val p{margin:0}.val .gap{height:.7em}.val ul,.val ol{margin:.25rem 0 .25rem 1.2rem;padding:0}.val .md-h{font-weight:700;margin-top:.3rem}
+.items{list-style:none;margin:0;padding:0}
+.item{position:relative;padding:.6rem 0 .6rem 0;border-top:1px solid #efece5;break-inside:avoid;page-break-inside:avoid}.item:first-child{border-top:0;padding-top:.1rem}
+.numbered .item{padding-left:2.25rem}.numbered .item-n{position:absolute;left:0;top:.65rem;font-size:.75rem;font-weight:700;color:#77736a;width:1.75rem;height:1.5rem;border-radius:6px;background:#f2efe8;display:flex;align-items:center;justify-content:center}
+.numbered .item:first-child .item-n{top:.15rem}
+.slides .item{padding-left:0}.slides .item-n{position:static;display:inline-block;width:auto;height:auto;padding:.1rem .5rem;margin:0 0 .3rem;background:#f2efe8;border-radius:6px}
+.slide-t{font-weight:600;color:#141414;margin:0 0 .15rem!important}
+.timeline{border-top:1px solid #efece5}
+.tl-row{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:.55rem 0;border-bottom:1px solid #efece5;break-inside:avoid;page-break-inside:avoid}
+.tl-time{font-size:.85rem;font-weight:600;color:#55524b;font-variant-numeric:tabular-nums;line-height:1.85}
+.note{color:#77736a;font-size:.85rem;line-height:1.45;margin-top:.15rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{background:#eef4f2;color:#0b4f44;border-radius:999px;padding:.2rem .7rem;font-size:.85rem;font-weight:600;line-height:1.5}
+.chip-alt{background:#f2efe8;color:#3d3b36}
+.tip .val{background:#fbf7ea;border-left:3px solid #e2c766;padding:.5rem .8rem;font-size:.92rem}
+.frame{border:1px solid #e4e0d6;border-radius:10px;padding:.9rem 1rem 1rem;margin:0 0 1.1rem;background:#fcfbf8}
+.frame-bar{display:flex;align-items:center;gap:.6rem;font-size:.85rem;line-height:1.3;padding-bottom:.7rem;margin-bottom:.8rem;border-bottom:1px solid #efece5;break-after:avoid}
+.frame .field:last-child{margin-bottom:0}
+.tbl{width:100%;border-collapse:collapse;font-size:.9rem}.tbl th{text-align:left;color:#77736a;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid #e4e0d6;padding:.4rem}.tbl td{border-bottom:1px solid #efece5;padding:.45rem .4rem;vertical-align:top}
+.kv dt{font-weight:600;margin-top:.4rem}.kv dd{margin:.15rem 0 0}
+.muted{color:#77736a;font-size:.875rem}
+.appendix{background:#fff;border:1px solid #e4e0d6;border-radius:12px;padding:1.1rem 1.5rem;margin:1.75rem 0 1.25rem}
+.appendix summary{cursor:pointer;list-style-position:outside;line-height:1.4}.appendix[open] summary{margin-bottom:1rem}
+.appendix .sec{display:inline;font-size:1.1rem}
+section.appendix .sec{display:block;margin-bottom:1rem}
+.pull{margin:0 0 1rem;padding:.2rem 0 .2rem 1rem;border-left:3px solid #0e6b5c;font-size:1.15rem;line-height:1.5;font-weight:500;color:#141414}
+.lead{color:#3d3b36;margin:1rem 0}
+.gl{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1.5rem;margin:1rem 0}.gl dd{margin:.15rem 0 0;font-size:.95rem;line-height:1.5}.gl-i{break-inside:avoid;page-break-inside:avoid}
+h3.minor{font-size:.75rem;text-transform:uppercase;letter-spacing:.07em;color:#77736a;margin:1.25rem 0 .4rem;break-after:avoid;page-break-after:avoid}
+.ideas{margin:0;padding-left:1.2rem}.ideas li{margin-bottom:.4rem;break-inside:avoid;page-break-inside:avoid}.gl-p{margin:0}
+.foot{text-align:center;color:#99938a;font-size:.8rem;padding:.75rem 0 1.5rem}.mark{font-weight:600;color:#77736a}
+.toolbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:.5rem;padding:.55rem 1rem;background:rgba(247,245,240,.96);border-bottom:1px solid #e4e0d6;backdrop-filter:blur(6px)}
+.tb-title{font-weight:700;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}.tb-gap{flex:1}
+.btn,.copy-btn{font:inherit;font-weight:600;border-radius:8px;cursor:pointer;line-height:1.2;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center}
+.btn{font-size:.85rem;padding:.5rem .9rem;border:1px solid #d6d1c4;background:#fff;color:#1f1f1f}
+.btn.primary{background:#0e6b5c;border-color:#0e6b5c;color:#fff}
+.btn.ghost{background:transparent;border-color:transparent;color:#55524b}
+a.dl[href=''],a.dl[href*='__PRISMAI_PDF']{display:none}
+.copy-btn{font-size:.75rem;padding:.25rem .65rem;border:1px solid #d6d1c4;background:#fff;color:#3d3b36}
+.copy-btn:hover,.btn:hover{border-color:#a59f92}.copy-btn.done{background:#0e6b5c;border-color:#0e6b5c;color:#fff}
+[contenteditable]{outline:1px dashed transparent;outline-offset:3px;transition:outline-color .15s}
+[contenteditable]:hover{outline:1px dashed #8fbfb4;cursor:text}[contenteditable]:focus{outline:2px solid #0e6b5c;background:#fff}
+.toast{position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:#1f1f1f;color:#fff;padding:.5rem .9rem;border-radius:8px;font-size:.85rem;z-index:60;opacity:0;transition:opacity .2s;pointer-events:none}.toast.show{opacity:1}
+.nojs-only{display:none}
+@media (max-width:640px){.wrap{padding:1rem .85rem 1.5rem}h1{font-size:1.5rem}.card{padding:1rem 1rem 1.15rem}.appendix{padding:1rem}.gl{grid-template-columns:1fr}.toolbar{padding:.45rem .6rem;gap:.35rem}.tb-title{display:none}.tb-gap{display:none}.btn{font-size:.8rem;padding:.45rem .6rem;flex:1;justify-content:center}.lg-only{display:none}.plan li+li::before{display:none}.hero .cover-img{margin:1rem 0 0}.tl-row{grid-template-columns:5rem 1fr;gap:.6rem}.card-sub{display:none}.card-head h2{font-size:1.15rem}.frame{padding:.75rem}}
+@media print{html{font-size:14px}body{background:#fff}.toolbar,.copy-btn,.toast,.hint,.cover-img figcaption{display:none!important}[contenteditable]{outline:none!important}.card,.appendix{border-color:#ddd}@page{size:Letter;margin:.6in}}
+@media (min-width:641px){.sm-only{display:none}}</style></head><body><div class="toolbar" role="toolbar" aria-label="Report tools"><span class="tb-title">Brew &amp; Co · 3-platform content pack</span><span class="tb-gap"></span><a class="btn primary dl" id="tb-pdf" href="report.pdf" target="_blank" rel="noopener">Download PDF</a><button type="button" class="btn" id="tb-print"><span class="lg-only">Print my edited version</span><span class="sm-only">Print edits</span></button><button type="button" class="btn ghost" id="tb-reset">Reset</button></div><div class="wrap"><header class="hero has-img"><div class="hero-text"><div class="brand-row"><span class="avatar lg">BC</span><span class="brand-name">Brew &amp; Co</span></div><h1><span class="kicker">3-platform content pack:</span> loyalty app</h1><p class="sub">Brew &amp; Co launches its first loyalty app to reward neighbors with free drinks and skip-the-line convenience</p><p class="meta-row"><span class="mi"><span class="mk">For</span> local coffee lovers and busy commuters in the neighborhood</span><span class="mi"><span class="mk">Voice</span> Conversational</span></p></div><figure class="cover-img"><img src="assets/cover.png" alt="Cover image for Brew &amp; Co"><figcaption><a href="assets/cover.png" download target="_blank" rel="noopener">Download image</a></figcaption></figure></header><div class="content-head"><h2 class="sec">Your ready-to-post content</h2><p class="hint">Click any post to edit. Copy buttons copy just the text.</p></div><ol class="plan" aria-label="Posting order"><li><a href="#p-instagram"><span class="step" style="background:#d62976">1</span>Instagram</a></li><li><a href="#p-youtube_shorts"><span class="step" style="background:#ff0000">2</span>YouTube Shorts</a></li><li><a href="#p-email_newsletter"><span class="step" style="background:#7c3aed">3</span>Email Newsletter</a></li></ol><section class="card" id="p-instagram" style="--pc:#d62976"><div class="card-head"><span class="step" style="background:#d62976">1</span><h2>Instagram</h2><span class="card-sub">Post first</span><button type="button" class="copy-btn" data-copy="card">Copy all</button></div><div class="field" data-key="reel_hook"><div class="f-head"><span class="label">Reel on-screen hook (first 3 seconds)</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>How to skip the line and get free coffee.</p></div></div><div class="field" data-key="caption"><div class="f-head"><span class="label">Caption</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Ever wish you could walk right past the morning coffee line and have your usual waiting for you? Now you can.</p><div class="gap"></div><p>We&#39;re bringing the Brew &amp; Co experience to your phone with our brand-new loyalty app—built specifically for our neighborhood regulars. We know your mornings are a rush, so we&#39;re making it easier to get your fix and get rewarded for it.</p><div class="gap"></div><p>Here&#39;s what&#39;s waiting for you inside:</p><div class="gap"></div><p>☕️ Buy 9, Get 1 Free: Your 10th drink is on us. Every single time.</p><p>🥐 Insider Access: Be the first to try our new seasonal releases before anyone else.</p><p>⚡️ Skip the Line: Order ahead on your commute and grab your coffee without the wait.</p><div class="gap"></div><p>We love being your local spot, and we wanted a way to say thanks for choosing us. Download the Brew &amp; Co app today to start earning rewards and skip tomorrow&#39;s line!</p></div></div><div class="field" data-key="hashtags"><div class="f-head"><span class="label">Hashtags</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="chips"><span class="chip" contenteditable="true" spellcheck="true">#loyaltyapp</span><span class="chip" contenteditable="true" spellcheck="true">#brewandco</span><span class="chip" contenteditable="true" spellcheck="true">#freecoffee</span><span class="chip" contenteditable="true" spellcheck="true">#orderahead</span><span class="chip" contenteditable="true" spellcheck="true">#morningroutine</span><span class="chip" contenteditable="true" spellcheck="true">#localcoffee</span><span class="chip" contenteditable="true" spellcheck="true">#coffeeshopvibes</span><span class="chip" contenteditable="true" spellcheck="true">#neighborhoodspot</span><span class="chip" contenteditable="true" spellcheck="true">#coffeelovers</span></div></div></section><section class="card" id="p-youtube_shorts" style="--pc:#ff0000"><div class="card-head"><span class="step" style="background:#ff0000">2</span><h2>YouTube Shorts</h2><span class="card-sub">Post #2</span><button type="button" class="copy-btn" data-copy="card">Copy all</button></div><div class="field" data-key="title"><div class="f-head"><span class="label">Video title</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Skip the Coffee Line at Brew &amp; Co! ☕️</p></div></div><div class="field" data-key="script"><div class="f-head"><span class="label">Spoken script</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Stop wasting your morning waiting for coffee. We just launched the Brew &amp; Co loyalty app to give you your time back and reward you for every sip. Here is how it works. First, every ninth purchase earns you a free drink. It is a simple way for us to thank you for being part of the neighborhood. Plus, you get exclusive early access to all our new seasonal menu releases before anyone else. But the best part for your morning rush is the order-ahead feature. You can bypass the physical line entirely by ordering on your way here. It bridges that gap between artisanal charm and modern convenience. You get to be the regular who is recognized and valued without ever having to wait. Download the Brew &amp; Co app today to start earning rewards and skip tomorrow&#39;s line.</p></div></div><div class="field" data-key="on_screen_text"><div class="f-head"><span class="label">On-screen text overlays</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="timeline"><div class="tl-row"><div class="tl-time">0–3 seconds, during hook</div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Stop waiting for coffee.</p></div><div class="note">Big bold white text on a dark overlay for high contrast</div></div></div><div class="tl-row"><div class="tl-time">12–15 seconds, during rewards point</div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Buy 9, Get 1 Free</p></div><div class="note">Animated gold text with a subtle shimmer effect</div></div></div><div class="tl-row"><div class="tl-time">22–25 seconds, during seasonal menu point</div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Insider Early Access</p></div><div class="note">Clean sans-serif font, lower third placement</div></div></div><div class="tl-row"><div class="tl-time">32–35 seconds, during order-ahead point</div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Skip The Line</p></div><div class="note">Bold red and white kinetic text, center screen</div></div></div><div class="tl-row"><div class="tl-time">52–60 seconds, during CTA</div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>Download the App Now</p></div><div class="note">Bright green pulsing button-style text</div></div></div></div></div><div class="field" data-key="b_roll_shot_ideas"><div class="f-head"><span class="label">B-roll shot ideas</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="timeline"><div class="tl-row"><div class="tl-time">Early — during hook (0–8 sec)</div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>A close-up of a person looking frustrated while standing at the back of a long, slow-moving line in a coffee shop.</p></div></div></div><div class="tl-row"><div class="tl-time">Mid — during key points (10–35 sec)</div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>A screen recording showing the user interface of the Brew &amp; Co app, specifically the loyalty progress bar moving forward.</p></div></div></div><div class="tl-row"><div class="tl-time">Mid — during key points (10–35 sec)</div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>A person walking briskly toward the shop entrance, tapping the &#39;Place Order&#39; button on their smartphone.</p></div></div></div><div class="tl-row"><div class="tl-time">Late — during payoff (38–50 sec)</div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>A satisfying shot of a person walking past the line, grabbing a steaming latte from the &#39;App Pickup&#39; counter, and nodding to the barista.</p></div></div></div><div class="tl-row"><div class="tl-time">Late — during CTA (52–60 sec)</div><div class="tl-body"><div class="val" contenteditable="true" spellcheck="true"><p>The creator holds a phone displaying the Brew &amp; Co app logo next to a freshly brewed cup of coffee on a wooden table.</p></div></div></div></div></div><div class="field" data-key="description"><div class="f-head"><span class="label">Video description</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Stop waiting in line and start getting rewarded with the new loyalty app from Brew &amp; Co. Use our order ahead feature to save time and earn a free coffee every ninth visit. Download today!</p></div></div><div class="field" data-key="hashtags"><div class="f-head"><span class="label">Hashtags</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="chips"><span class="chip" contenteditable="true" spellcheck="true">#Shorts</span><span class="chip" contenteditable="true" spellcheck="true">#loyaltyapp</span><span class="chip" contenteditable="true" spellcheck="true">#orderahead</span><span class="chip" contenteditable="true" spellcheck="true">#freecoffee</span><span class="chip" contenteditable="true" spellcheck="true">#BrewAndCo</span></div></div></section><section class="card" id="p-email_newsletter" style="--pc:#7c3aed"><div class="card-head"><span class="step" style="background:#7c3aed">3</span><h2>Email Newsletter</h2><span class="card-sub">Post #3</span><button type="button" class="copy-btn" data-copy="card">Copy all</button></div><div class="frame frame-email"><div class="frame-bar"><span class="avatar">BC</span><span><strong>Brew &amp; Co</strong><br><span class="muted">to your subscribers</span></span></div><div class="field" data-key="subject_line"><div class="f-head"><span class="label">Subject line</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Your free coffee is waiting</p></div></div><div class="field" data-key="preview_text"><div class="f-head"><span class="label">Inbox preview text</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Download the Brew &amp; Co app and start skipping lines today</p></div></div><div class="field" data-key="body"><div class="f-head"><span class="label">Email body</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Hey there,</p><div class="gap"></div><p>We know your mornings are packed. That&#39;s why we built something just for you.</p><div class="gap"></div><p>Brew &amp; Co&#39;s new loyalty app does two things really well: it rewards you for being a regular, and it gets you out the door faster. Buy nine drinks, get one free. Early access to seasonal menu drops. And here&#39;s the big one—order ahead to skip the morning line entirely.</p><div class="gap"></div><p>This isn&#39;t just another points program. It&#39;s our way of saying thanks to the neighbors who make Brew &amp; Co what it is. We&#39;re turning casual coffee runs into a ritual where you feel recognized and valued.</p><div class="gap"></div><p>Your VIP status starts now.</p></div></div></div><div class="field" data-key="cta"><div class="f-head"><span class="label">Call to action</span><button type="button" class="copy-btn" data-copy="field">Copy</button></div><div class="copy val" contenteditable="true" spellcheck="true"><p>Download the Brew &amp; Co app today and earn your first reward</p></div></div></section><details class="appendix"><summary><span class="sec">At a glance: strategy notes</span><span class="muted"> · what PrismAI found in your content</span></summary><blockquote class="pull">The Brew &amp; Co loyalty app bridges the gap between artisanal neighborhood charm and modern convenience, rewarding community loyalty while streamlining the morning rush.</blockquote><p class="meta-row"><span class="mi"><span class="mk">Content type</span> Announcement</span><span class="mi"><span class="mk">Tone</span> Warm, conversational, community-focused, and efficiently helpful</span><span class="mi"><span class="mk">Keyword</span> loyalty app</span></p><p class="lead">Brew &amp; Co is introducing its first mobile loyalty app this month, designed specifically for its neighborhood community. The app features a &#39;buy nine, get one free&#39; reward structure and grants exclusive early access to seasonal menu releases. Beyond rewards, the app addresses the needs of busy commuters by offering an &#39;order ahead&#39; feature to bypass morning queues. The initiative aims to deepen community ties and transition casual customers into valued regulars.</p><dl class="gl"><div class="gl-i"><dt class="label">Problem it solves</dt><dd>The frustration of long morning wait times and the lack of recognition for being a frequent local customer.</dd></div><div class="gl-i"><dt class="label">What your audience wants</dt><dd>A stress-free morning ritual where the customer feels rewarded and recognized as a VIP regular.</dd></div><div class="gl-i"><dt class="label">Emotional hook</dt><dd>The feeling of being a &#39;regular&#39; who is recognized, valued, and never has to wait.</dd></div></dl><h3 class="minor">Key ideas</h3><ol class="ideas"><li><strong>Generous Reward Structure</strong><div class="note">Encourages repeat visits and provides tangible value to frequent coffee drinkers.</div></li><li><strong>Exclusive Perks for Regulars</strong><div class="note">Builds a sense of belonging and &#39;insider&#39; status among the local community.</div></li><li><strong>Frictionless Morning Routine</strong><div class="note">Solves the primary pain point of time-strapped commuters during peak hours.</div></li><li><strong>Community-Centric Growth</strong><div class="note">Moves the relationship from transactional to relational, fostering neighborhood loyalty.</div></li></ol><h3 class="minor">Who this is for</h3><p class="gl-p">Mornings are a rush for these local professionals and residents who value high-quality coffee but hate waiting. They appreciate small-business vibes but crave digital efficiency. They are motivated by status (early access) and value (free drinks).</p></details><footer class="foot">Prepared for Brew &amp; Co · October 17th, 2026 at 4:00 PM · <span class="mark">Made with PrismAI</span></footer></div><div id="toast" class="toast" role="status" aria-live="polite"></div><script>(function clientMain() {
+  var root = document.documentElement; root.className += " js";
+  var KEY = "prismai-edits:" + location.host + location.pathname, store = null;
+  try { localStorage.setItem(KEY + ":t", "1"); localStorage.removeItem(KEY + ":t"); store = localStorage; } catch (e) {}
+  var els = document.querySelectorAll("[contenteditable]");
+  function fp(t) { var h = 0; for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) | 0; return String(h); }
+  var originals = []; for (var i = 0; i < els.length; i++) originals.push(fp(els[i].textContent));
+  var sig = fp(originals.join("|"));
+  function escT(t) { return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function setText(el, t) {
+    if (el.tagName === "SPAN") { el.textContent = t; return; }
+    el.innerHTML = String(t).split(/\n/).map(function (l) { return l.trim() ? "<p>" + escT(l) + "</p>" : '<div class="gap"></div>'; }).join("");
+  }
+  // Plain text of one value: paragraphs on their own lines, blank line where the post has a gap
+  function plain(el) {
+    if (!el) return "";
+    var out = [];
+    (function walk(n) {
+      for (var c = n.firstChild; c; c = c.nextSibling) {
+        if (c.nodeType === 3) { if (c.nodeValue.trim()) out.push(c.nodeValue.trim()); continue; }
+        if (c.nodeType !== 1) continue;
+        if (c.classList.contains("gap")) out.push("");
+        else if (c.tagName === "UL" || c.tagName === "OL") { for (var li = c.firstElementChild; li; li = li.nextElementSibling) out.push("- " + li.innerText.trim()); }
+        else if (/^(P|DIV|H\d)$/.test(c.tagName) && c.querySelector("p,div")) walk(c);
+        else out.push(c.innerText.replace(/\n+$/, ""));
+      }
+    })(el);
+    return out.join("\n").replace(/\n{3,}/g, "\n\n").trim();
+  }
+  function fieldText(f) {
+    var chips = f.querySelectorAll(".chip");
+    if (chips.length) { var a = []; for (var i = 0; i < chips.length; i++) a.push(chips[i].innerText.trim()); return a.join(" "); }
+    var rows = f.querySelectorAll(".tl-row");
+    if (rows.length) { var b = []; for (var j = 0; j < rows.length; j++) { var t = rows[j].querySelector(".tl-time").innerText.trim(); b.push((t ? t + ": " : "") + plain(rows[j].querySelector(".val"))); } return b.join("\n\n"); }
+    var items = f.querySelectorAll(".item");
+    if (items.length) { var c = []; for (var k = 0; k < items.length; k++) c.push(plain(items[k].querySelector(".val"))); return c.join("\n\n"); }
+    var tbl = f.querySelector("table"); if (tbl) return tbl.innerText.trim();
+    return plain(f.querySelector(".val"));
+  }
+  function toast(msg) { var t = document.getElementById("toast"); if (!t) return; t.textContent = msg; t.className = "toast show"; clearTimeout(toast._t); toast._t = setTimeout(function () { t.className = "toast"; }, 2600); }
+  if (store) {
+    try {
+      var saved = JSON.parse(store.getItem(KEY) || "null");
+      if (saved && saved.sig === sig && saved.n === els.length && saved.edits) for (var k in saved.edits) { var idx = +k; if (els[idx] && typeof saved.edits[k] === "string") setText(els[idx], saved.edits[k]); }
+    } catch (e) {}
+  }
+  var timer = null;
+  function save() {
+    if (!store) return;
+    var edits = {}, any = false;
+    for (var i = 0; i < els.length; i++) if (fp(els[i].textContent) !== originals[i]) { edits[i] = els[i].innerText; any = true; }
+    try { if (any) store.setItem(KEY, JSON.stringify({ sig: sig, n: els.length, edits: edits })); else store.removeItem(KEY); } catch (e) {}
+  }
+  document.addEventListener("input", function (e) { if (e.target && e.target.closest && e.target.closest("[contenteditable]")) { clearTimeout(timer); timer = setTimeout(save, 400); } });
+  document.addEventListener("paste", function (e) {
+    var t = e.target && e.target.closest && e.target.closest("[contenteditable]"); if (!t || !e.clipboardData) return;
+    e.preventDefault(); if (document.execCommand) document.execCommand("insertText", false, e.clipboardData.getData("text/plain"));
+  });
+  function copyText(text, btn) {
+    function done() { var old = btn.getAttribute("data-label") || btn.textContent; btn.setAttribute("data-label", old); btn.textContent = "Copied"; btn.className += " done"; clearTimeout(btn._t); btn._t = setTimeout(function () { btn.textContent = old; btn.className = btn.className.replace(/\s*done/g, ""); }, 1500); }
+    function fallback() {
+      var ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.top = "-1000px";
+      document.body.appendChild(ta); ta.select(); var ok = false; try { ok = document.execCommand("copy"); } catch (e) {} document.body.removeChild(ta);
+      if (ok) done(); else toast("Copy is blocked here. Select the text and press Ctrl/Cmd+C.");
+    }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback); else fallback();
+  }
+  function openAll() { var d = document.querySelectorAll("details"); for (var i = 0; i < d.length; i++) d[i].open = true; }
+  window.addEventListener("beforeprint", openAll);
+  document.addEventListener("click", function (e) {
+    var b = e.target && e.target.closest ? e.target.closest("button") : null; if (!b) return;
+    var kind = b.getAttribute("data-copy");
+    if (kind === "field") copyText(fieldText(b.closest(".field")), b);
+    else if (kind === "card") {
+      var fs = b.closest(".card").querySelectorAll(".field"), parts = [];
+      for (var i = 0; i < fs.length; i++) { if (fs[i].querySelector(".copy-btn")) { var t = fieldText(fs[i]); if (t) parts.push(t); } }
+      copyText(parts.join("\n\n"), b);
+    } else if (b.id === "tb-print") {
+      if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+      openAll(); try { window.print(); } catch (err) { toast("Press Ctrl+P (Cmd+P on Mac) to save as PDF."); }
+    } else if (b.id === "tb-reset") {
+      if (!window.confirm || window.confirm("Undo all your edits and restore the original report?")) { try { if (store) store.removeItem(KEY); } catch (err) {} location.reload(); }
+    }
+  });
+})();</script></body></html>
