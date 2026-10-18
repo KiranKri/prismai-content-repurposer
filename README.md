@@ -90,10 +90,6 @@ Details and the other decisions: [docs/architecture.md](docs/architecture.md), [
 
 The older samples are kept on purpose: the tests confirm the checks catch the bugs each round shipped with. CI runs everything on every push. Details and the current checker output: [docs/testing.md](docs/testing.md).
 
-## What I would do next
-
-TODO(KK): what you would build or change next.
-
 ## About this repo
 
 PrismAI is a live commercial product. The prompts, the full workflow and the full report builder are private. This repo holds the rendered sample reports, two small utilities extracted from the builder, the tests and the documentation. It is shared for review only (see [License](#license)).
