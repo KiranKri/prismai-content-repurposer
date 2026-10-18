@@ -1,0 +1,16 @@
+{
+  "name": "prismai-content-repurposer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "check:pdf": "node tests/pdf-checks/check-pdf.js samples"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "happy-dom": "20.14.5",
+    "pdfjs-dist": "6.3.289"
+  }
+}

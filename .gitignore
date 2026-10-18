@@ -1,0 +1,15 @@
+# Raw MindStudio exports live outside the repo and must never be committed
+_inbox/
+# The task brief
+PRISMAI_REPO_PROMPT.md
+# Local secrets
+.env
+.env.*
+# Dependencies and tool output
+node_modules/
+.playwright-mcp/
+*.log
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
